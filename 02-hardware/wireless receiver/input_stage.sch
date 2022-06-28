@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9100 3200 2    50   Output ~ 0
+IN1
+Text HLabel 9100 3300 2    50   Output ~ 0
+IN2
+Text HLabel 9100 3400 2    50   Output ~ 0
+IN3
+Text HLabel 9100 3500 2    50   Output ~ 0
+IN4
+Text HLabel 3250 3200 0    50   Input ~ 0
+INPUT1
+Text HLabel 3250 3300 0    50   Input ~ 0
+INPUT2
+Text HLabel 3250 3400 0    50   Input ~ 0
+INPUT3
+Text HLabel 3250 3500 0    50   Input ~ 0
+INPUT4
+Text HLabel 9100 3700 2    50   Output ~ 0
+LP1
+Text HLabel 9100 3800 2    50   Output ~ 0
+LP2
+Text HLabel 3250 3700 0    50   Input ~ 0
+LOOPBACK1
+Text HLabel 3250 3800 0    50   Input ~ 0
+LOOPBACK2
+Text HLabel 3250 2500 0    50   UnSpc ~ 0
++3.3V
+Text HLabel 3250 4800 0    50   UnSpc ~ 0
+GND
+$Comp
+L p_Logic:74HCT244 U12
+U 1 1 6494F349
+P 5450 3700
+F 0 "U12" H 5200 4550 50  0000 C CNN
+F 1 "74HCT244" H 5550 2950 50  0000 C CNN
+F 2 "p_Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5450 3700 50  0001 C CNN
+F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Logic/74HC_HCT244.pdf" H 5450 3700 50  0001 C CNN
+	1    5450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3200 3250 3200
+Wire Wire Line
+	3250 3300 4950 3300
+Wire Wire Line
+	3250 3400 4950 3400
+Wire Wire Line
+	4950 3500 3250 3500
+Wire Wire Line
+	3250 3700 4950 3700
+Wire Wire Line
+	3250 3800 4950 3800
+NoConn ~ 5950 3900
+NoConn ~ 5950 4000
+$Comp
+L power:GND #PWR0102
+U 1 1 64A6113A
+P 3350 4850
+F 0 "#PWR0102" H 3350 4600 50  0001 C CNN
+F 1 "GND" H 3355 4677 50  0000 C CNN
+F 2 "" H 3350 4850 50  0001 C CNN
+F 3 "" H 3350 4850 50  0001 C CNN
+	1    3350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4800 3350 4800
+$Comp
+L power:GND #PWR0103
+U 1 1 64A61872
+P 4850 4350
+F 0 "#PWR0103" H 4850 4100 50  0001 C CNN
+F 1 "GND" H 4855 4177 50  0000 C CNN
+F 2 "" H 4850 4350 50  0001 C CNN
+F 3 "" H 4850 4350 50  0001 C CNN
+	1    4850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4350 4850 4300
+Wire Wire Line
+	4850 4200 4950 4200
+Wire Wire Line
+	4950 4300 4850 4300
+Connection ~ 4850 4300
+Wire Wire Line
+	4850 4300 4850 4200
+$Comp
+L power:GND #PWR0104
+U 1 1 64A6216F
+P 6050 4350
+F 0 "#PWR0104" H 6050 4100 50  0001 C CNN
+F 1 "GND" H 6055 4177 50  0000 C CNN
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4300 6050 4300
+Wire Wire Line
+	6050 4300 6050 4350
+$Comp
+L p_Passive:C_0603 C26
+U 1 1 64A630ED
+P 6250 2750
+F 0 "C26" H 6365 2796 50  0000 L CNN
+F 1 "100n" H 6365 2705 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6250 2750 50  0001 C CNN
+F 3 "" H 6250 2750 50  0001 C CNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 64A6358A
+P 6250 2950
+F 0 "#PWR0106" H 6250 2700 50  0001 C CNN
+F 1 "GND" H 6255 2777 50  0000 C CNN
+F 2 "" H 6250 2950 50  0001 C CNN
+F 3 "" H 6250 2950 50  0001 C CNN
+	1    6250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2900 6250 2950
+Wire Wire Line
+	5950 3000 6000 3000
+Wire Wire Line
+	6000 3000 6000 2550
+Wire Wire Line
+	6000 2550 6250 2550
+Wire Wire Line
+	6250 2550 6250 2600
+Wire Wire Line
+	5950 3200 9100 3200
+Wire Wire Line
+	9100 3300 5950 3300
+Wire Wire Line
+	5950 3400 9100 3400
+Wire Wire Line
+	9100 3500 5950 3500
+Wire Wire Line
+	5950 3700 9100 3700
+Wire Wire Line
+	9100 3800 5950 3800
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 64A73192
+P 3350 2400
+F 0 "#PWR0101" H 3350 2250 50  0001 C CNN
+F 1 "+3.3V" H 3365 2573 50  0000 C CNN
+F 2 "" H 3350 2400 50  0001 C CNN
+F 3 "" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2500 3350 2500
+Wire Wire Line
+	3350 2500 3350 2400
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 64A73BD2
+P 6250 2500
+F 0 "#PWR0105" H 6250 2350 50  0001 C CNN
+F 1 "+3.3V" H 6265 2673 50  0000 C CNN
+F 2 "" H 6250 2500 50  0001 C CNN
+F 3 "" H 6250 2500 50  0001 C CNN
+	1    6250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2500 6250 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	4850 4200 4850 4000
+Wire Wire Line
+	4850 3900 4950 3900
+Connection ~ 4850 4200
+Wire Wire Line
+	4950 4000 4850 4000
+Connection ~ 4850 4000
+Wire Wire Line
+	4850 4000 4850 3900
+Wire Wire Line
+	3350 4800 3350 4850
+$EndSCHEMATC
